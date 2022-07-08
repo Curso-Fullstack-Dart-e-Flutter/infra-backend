@@ -10,9 +10,9 @@ services:
       MYSQL_PASSWORD: 'dart_pass'      
       MYSQL_ROOT_PASSWORD: 'root'
     ports:
-      - '3309:3309'
+      - '3306:3306'
     expose:
-      - '3309'
+      - '3306'
     volumes:
       - './volumes/mysql:/var/lib/mysql'
       #- "./db.sql:/docker-entrypoint-initdb.d/database.sql"
